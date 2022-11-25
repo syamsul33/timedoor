@@ -56,6 +56,10 @@ footer ul, footer .flex-row h3{
     list-style-type:none;
     margin-left: 20%
 }
+footer h3, section h2{
+    color: #D66F62;
+}
+}
 
 .flex-between{
     justify-content: space-between;
@@ -112,5 +116,36 @@ section{
     background-color: orange;
 }
 .section-two{
-    background-color:blue;
+    background-color: lightgray;
+}
+.section-twoimg{
+    width: 30%;
+    max-width: 30%;
+    border: 2px solid black;
+}
+.right{
+    float: right;
+}
+.desc-shoe{
+    width:68%;
+}
+.desc-shoe p{
+    text-align: justify;
+}
+.desc-shoe h2{
+    margin: 0
+}
+.section-box{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right:5px;
+    margin-bottom: 10px;
+}
+.scmedia li{
+    display: inline;
+    margin-right: 5px;
+}
+
+.last-section{
+    background-color: darkslategrey;
 }
