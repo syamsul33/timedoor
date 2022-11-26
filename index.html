@@ -11,12 +11,20 @@
 <body>
     <header>
         <h1 class="text-logo">Your <span>Shoes</span></h1>
-        <nav class="nav-right">
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">Service</a>
-            <a href="#">About</a>
-            <button class="btn-login">Log in</button>
+        <nav class="nav-right flex-row">
+            <div><a href="#">Home</a></div>
+            <div class="drop">
+                <a href="#" class="drop">Products</a>
+                <!-- Modal-->
+                <div class="flex-column">
+                    <a href="#">Sepatu</a>
+                    <a href="#">Sendal</a>
+                    <a href="#">Boots</a>
+                </div>
+            </div>
+            <div><a href="#">Service</a></div>
+            <div><a href="#">About</a></div>
+            <div style="margin-top: -3px;"><button class="btn-login">Log in</button></div>
         </nav>
         <div>
             <img src="https://eagle.co.id/wp-content/uploads/2022/10/Wild-Fire-2-600x600.jpg" alt="logo image" class="center main-img">
@@ -68,9 +76,18 @@
                 </div>
             </div>
         </section>
-        <section class="last-section">
-            <div>
-
+        <section class="last-section flex-row">
+            <div class="testimoni-box">
+                <div class="box-testimg">
+                    <img src="https://img.freepik.com/free-vector/group-people-illustration-set_52683-33806.jpg?w=2000" alt="testimoni" class="testi-img">
+                </div>
+                <div class="desc-testi">
+                <h2>Testimoni</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id massa eget nisl rutrum ultricies et molestie tellus. Nam sed bibendum ligula. Nunc suscipit eros eget lorem fringilla, mattis sodales sapien interdum. Pellentesque ac condimentum ipsum, sed cursus dolor. Aliquam non facilisis sapien. Donec eleifend dui enim. Vivamus eu elit eget tellus aliquet molestie ac ut risus. Sed odio dui, aliquet a leo dictum, porta scelerisque augue. Nullam hendrerit enim lorem, eu porta sapien auctor tempus. Ut ullamcorper est a blandit fermentum. Pellentesque elementum erat nec est ullamcorper elementum. Mauris feugiat dignissim elit a mollis.
+                    </p>
+                    <p>Samsul Maarif, <span>Siswa Timedoor</span></p>
+                </div>
             </div>
         </section>
     </main>

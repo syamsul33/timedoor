@@ -15,6 +15,7 @@ span {
 .nav-right a {
     text-decoration: none;
     color:black;
+    margin-left: 15px;
 }
 .btn-login {
     margin-left: 10px;
@@ -29,8 +30,8 @@ span {
     margin: auto;
 }
 .main-img {
-    width: 30%;
-    margin-left: 35%;
+    width: 40%;
+    margin-left: 30%;
 }
 .tag-line {
     margin-top: -10%;
@@ -38,18 +39,22 @@ span {
 }
 .tag-line p{
     text-align: center;
-    font-size: 1.5em;
     font-weight: 600;
 }
 .tag-line1{
     color: #a3a3a3;
+    font-size: 1.5em;
+    margin-bottom: 0;
 }
 .tag-line2{
+    font-size: 0.8em;
+    margin-top: 0;
     font-style: italic;
 }
 
 footer{
-    background-color:darkgrey;
+    background-color:#393e46;
+    margin-top: 10px;
 }
 
 footer ul, footer .flex-row h3{
@@ -58,6 +63,9 @@ footer ul, footer .flex-row h3{
 }
 footer h3, section h2{
     color: #D66F62;
+}
+footer ul{
+    color: white;
 }
 
 .flex-between{
@@ -71,6 +79,10 @@ footer h3, section h2{
     display: flex;
     flex-direction:row;
 }
+.flex-column{
+    display: flex;
+    flex-direction:column;
+}
 .flex-center{
     justify-content: center;
 }
@@ -79,10 +91,12 @@ footer .flex-row div{
 }
 .copyright{
     text-align: center;
+    color: #eeeeee;
 }
 main{
   background-color: aliceblue;
-  padding-top: 1px;  
+  padding-top: 1px;
+  padding-bottom: 10px
 }
 .section-oneimg{
     width: 85%;
@@ -136,15 +150,51 @@ section{
 }
 .section-box{
     margin-top: 10px;
-    margin-left: 5px;
-    margin-right:5px;
+    margin-left: 15px;
+    margin-right:15px;
     margin-bottom: 10px;
 }
 .scmedia li{
     display: inline;
     margin-right: 5px;
 }
-
-.last-section{
-    background-color: darkslategrey;
+.testimoni-box{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 15px;
+    width: 80%;
+    margin: auto;
+    background-color: black;
+}
+.desc-testi{
+    padding-top: 0px;
+    margin-left: 15px;
+}
+.desc-testi h2{
+    margin-top: 0;
+    color: white;
+}
+.desc-testi p{
+    text-align:justify;
+    color: white;
+    font-size: 1.2em;
+}
+.testi-img{
+    width: 100%;
+    border: 3px double silver;
+}
+.box-testimg{
+    margin-top:auto;
+    margin-bottom:auto;
+}
+.drop .flex-column a{
+    display:none;
+}
+.drop:hover .flex-column a{
+    display: flex;
+}
+.drop:hover .flex-column a:hover{
+    background-color: black;
+    color: white;
 }
