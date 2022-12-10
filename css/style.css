@@ -166,6 +166,7 @@ section{
     width: 80%;
     margin: auto;
     background-color: black;
+    border-radius: 20px;
 }
 .desc-testi{
     padding-top: 0px;
@@ -197,4 +198,49 @@ section{
 .drop:hover .flex-column a:hover{
     background-color: black;
     color: white;
+}
+header,main,footer{
+    z-index: 0;
+}
+
+#modal-box1{
+    display: none;
+    position:fixed;
+    z-index: 2;
+    left: 20%;
+    top: 15%;
+    width: 60%;
+    height: 70%;
+    background-color: lightgray;
+    opacity: 80%;
+    border-radius:15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.details-box{
+    align-items: center;
+    text-align: center;
+}
+.details-box>p{
+    align-items: center;
+    text-align: justify;
+}
+.close-box1{
+ float: right;
+ position: absolute;
+ right: 10px;
+ font-size: 40px;   
+}
+.bayarB{
+    padding: 5px 40px;
+    font-size: 20px;
+    font-weight:700;
+    border-radius: 5px;
+    color: white;
+    background-color: orange;
+}
+#inputB{
+    width: 100px;
+    margin-bottom: 20px;
+    text-align: center;
 }
