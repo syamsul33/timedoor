@@ -18,7 +18,7 @@ var data = [{
 ]
 var detailsB = document.getElementsByClassName("detailsB");
 var modal1 = document.getElementById("modal-box1");
-var detailBox = document.getElementsByClassName("details-box")[0];
+var detailBox = "";
 var tag="";
 var text="";
 var input="";
@@ -27,6 +27,17 @@ var bayar="";
 for (const keyButton of detailsB) {
     keyButton.onclick = function(){
         modal1.style.display = "block";
+        if(detailBox===null||detailBox===""){
+            tag= document.createElement("div");
+            tag.className="details-box";
+            modal1.append(tag);    
+        }else {
+            detailBox.remove();
+            tag= document.createElement("div");
+            tag.className="details-box";
+            modal1.append(tag);
+        }
+        detailBox = document.getElementsByClassName("details-box")[0];
         tag= document.createElement("h2");
         text= document.createTextNode(data[keyButton.value].nama);
         tag.appendChild(text);
@@ -71,6 +82,7 @@ for (const keyButton of detailsB) {
                 }else {
                     alert("Isi Jumlah beli");
                 }
+                detailBox.remove();
             }
         }
     }
@@ -95,4 +107,5 @@ function update1(e){
 var close = document.getElementsByClassName("close-box1")[0];
 close.onclick = function(){
     modal1.style.display = "none";
+    detailBox.remove();
 }
